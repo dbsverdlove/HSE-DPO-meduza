@@ -1,1 +1,62 @@
 @import "./reset.css";
+
+/* псевдо-селекторы :before и :after, чтобы сделать полоски между элементами */
+
+body{
+  background-color: #f2f2f2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  display: flex;
+  height: 45px;
+  background-color: rgb(38, 38, 38);
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul:last-of-type {
+  align-items: center;
+  margin-right: 15px;
+}
+
+nav ul li {
+  padding: 5px 10px;
+  letter-spacing: 1px;
+}
+
+.logo {
+  margin-left: 15px;
+  height: 21px;
+  margin-top: -4px;
+}
+
+.info-panel {
+  background-color: #fff;
+  height: 45px;
+  display: flex;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  justify-content: space-between;
+  padding: 0 15px 0 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #999;
+  align-items: center;
+}
+
+.info-panel a {
+  text-decoration: none;
+  color: #999;
+}
